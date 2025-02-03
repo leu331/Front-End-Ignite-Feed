@@ -1,0 +1,130 @@
+.container {
+    margin-bottom: 1rem;
+}
+
+.comments {
+    padding-inline: 2.5rem;
+
+    margin-top: rem;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+     background-color: #202024;
+
+    & time {
+        color: var(--text-apoio);
+        font-size: .75rem;
+        margin-bottom: -17rem;
+        position: absolute;
+        top: 1.9rem;
+    }
+    & p {
+
+    }
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+
+   
+    width: 100%;
+    & img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    & .infos {
+       position: relative; 
+       background-color: #29292e;
+       border-radius: .5rem;
+        padding-inline: 1rem;
+        padding-block: 1rem 1.5rem;
+        width: 685px;
+        margin-bottom: 1rem;
+
+        & h2 {
+            color: var(--text-titulos);
+            font-weight: bold;
+            font-size: .875rem;
+            line-height: 160%;
+            margin-top: -.5rem;
+        }
+
+        & p {
+            font-size: .875rem;
+            line-height: 160%;
+            color: #c4c4cc; 
+            max-width: 40.9rem;
+            word-wrap: break-word;
+        }
+
+        & .deleteComment {
+            & .trashIcon {
+                font-size: 1.25rem;
+                line-height: 0;
+                background: transparent;
+                border: none;
+                color: white;
+                display: flex;
+                justify-content: end;
+                cursor: pointer;
+                margin-top: -1rem;    
+            }
+
+            & .trashIcon:hover {
+                font-size: 1.25rem;
+                line-height: 0;
+                background: transparent;
+                border: none;
+                color: #f75a68;
+                display: flex;
+                justify-content: end;
+                cursor: pointer;    
+            }
+        }
+    }
+}
+
+.trashIcon {
+    margin-left: auto;
+    }   
+
+.consd {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #202024;
+    padding-bottom: 1rem;
+}
+
+.likeIcon {
+    padding-left: 6.7rem;
+    display: flex;
+    align-items: center;
+    background-color: #202024;
+
+    & button {
+        background: transparent;
+        border: none;
+        font-size: 1.25rem;
+        color: var(--text-apoio);
+        display: flex;
+        align-items: center;
+        background-color: #202024;
+    }
+    & button:hover {
+        color: var(--blue);
+    }
+
+    & button:focus {
+        outline: none;
+    }
+}
+
+.like {
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    background-color: #202024; 
+}

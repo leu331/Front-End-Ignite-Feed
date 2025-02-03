@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline-style: transparent;
+    outline: 2px solid var(--blue)  ;
+}
+
+/* colors */
+:root {
+    --green: #00875f;
+    --green-light: #00b37e;
+    --blue: #61DAFB;
+
+    --background: #121214;
+    --cards: #202024;
+    --divider: #323238;
+    --placeholder: #7C7C8A;
+
+    --text-apoio: #8D8D99;
+    --text: #C4C4CC;
+    --text-titles: #E1E1E6;
+    --white: #ffffff;
+
+    --red-danger: #f75a68;
+
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}

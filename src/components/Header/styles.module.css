@@ -1,0 +1,16 @@
+header {
+
+    padding-block: 1.25rem;
+    background-color: var(--divider);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        height: 3rem;
+        width: 90rem;
+        display: block;
+ 
+    }
+}

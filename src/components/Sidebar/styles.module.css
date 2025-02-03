@@ -1,0 +1,76 @@
+.sidebar{
+    background-color: var(--cards);
+    border-radius: .75rem;
+    overflow: hidden;
+     position: relative;
+
+    & img[src="https://plus.unsplash.com/premium_photo-1663023612721-e588768ef403?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww"] {  
+        width: 256px;
+        height: 72px;
+        object-fit: cover;
+       
+      
+    }
+}
+
+.profile {
+    text-align: center;
+    margin-top: -1.4rem;/*estratégia útil para subir um elemento */
+
+    & h1 {
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 160%;
+        margin-top: .7rem;         
+    }
+
+    & p {
+        font-size: .875rem;
+        color: var(--text-apoio);
+        line-height: 160%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.divider {
+    border: 1px solid var(--divider);
+}
+
+footer {
+ margin-top: 1.25rem;
+
+    & a {
+        text-decoration: none;
+        display: flex;
+            margin: auto;
+            align-items: center;
+            gap: .5rem;
+            background: transparent;
+            margin-bottom: 1rem;
+            border: 1px solid var(--blue);
+            padding: .5rem;
+            border-radius: .75rem;
+            justify-content: center;
+            width: 10rem;
+            color: var(--blue);
+            
+            & img {
+                width: 1.25rem;
+                height: 1.25rem;
+                background: transparent;
+              
+            }
+
+            & p {
+                color: var(--blue)
+            }
+
+        }
+    }
+.sidebar footer a:hover {
+        background-color: var(--blue);
+        color: var(--white);
+        outline: 1px solid var(--white);
+        transition: color 0.2s, background-color 0.2s, outline 0.2s;
+    }

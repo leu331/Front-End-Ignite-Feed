@@ -1,0 +1,23 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem; /*para que se o usuário diminuir a tela, os elementos dêem um espaçamento e não cubram a tela toda*/
+
+    display: grid;
+    grid-template-columns: 256px 1fr;  /*crio o grid, falo que o card de perfil terá uma largura fixa e o main poderá ocupar todo o espaço da tela*/
+    gap: 2rem;
+    align-items: flex-start; /*para que o css não tente forçar o card a ter a mesma altura que o main*/
+
+    color: white;
+}
+
+@media (max-width: 768px)  {
+    .wrapper {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+.background {
+    background-color: aqua;
+}

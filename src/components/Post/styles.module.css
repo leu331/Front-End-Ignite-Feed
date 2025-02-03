@@ -1,0 +1,149 @@
+.container {
+    background-color: var(--cards);
+    overflow: hidden;
+
+}
+
+.mainHeader {
+    padding-inline: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .75rem;
+    overflow: hidden;
+    background-color: var(--cards);
+
+    & img {
+        width: 3rem;
+        height: 3rem;
+        border: 2px solid var(--cards);
+        outline: 2px solid var(--blue);
+        border-radius: .4rem;
+        box-sizing: initial;
+    }
+
+    & h2 {
+        font-size: 1rem;
+        line-height: 160%;
+    }
+
+    & p {
+        color: var(--text-apoio);
+        font-size: .875rem;
+        line-height: 160%;
+    }
+
+& time {
+    margin-left: auto;
+    font-size: .875rem;
+    color: var(--text-apoio);
+}
+}
+
+.container:not(:first-of-type) {
+    margin-top: 1rem;
+  }
+
+.content {
+    background-color: var(--cards);
+    padding-inline: 2.5rem;
+
+    & p {
+        color: #c4c4cc;
+        font-size: 1rem;
+        line-height: 160%;
+        text-align: justify;
+        font-family: "roboto";
+        font-size: .875rem;
+        margin-bottom: 1rem;
+       
+    }
+
+    & p:nth-child(2){
+        
+       
+    }
+
+   
+
+    & a {
+        color: var(--blue);
+        text-decoration: none;
+    }
+}
+
+& p:nth-child(8) {
+    color: var(--blue);
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+.divider {
+    border: 1px solid var(--divider);
+    margin-top: 3rem;
+}
+
+.footer {
+    padding-inline: 2.5rem;
+    margin-bottom: 1rem;
+
+    & p {
+        color: var(--text-titles);
+        font-weight: bold;
+        line-height: 160%;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    & textarea {
+        display: block;
+        width: 100%;
+        min-height: 6rem; /* Altura inicial mínima */
+        max-height: 12rem; /* Limite máximo de crescimento */
+        background-color: var(--background);
+        border-radius: 0.75rem;
+        color: var(--white);
+        margin-bottom: 1rem;
+        font-family: "roboto";
+        font-size: 0.875rem;
+        padding: 0.7rem 1rem;
+        box-sizing: border-box;
+        resize: none; /* Impede o redimensionamento manual */
+        overflow-y: auto; /* Adiciona barra de rolagem caso o conteúdo exceda o limite */
+    }
+
+    & button {
+        background-color: var(--blue);
+        padding-inline: 1.25rem;
+        padding-block: .875rem;
+        border-radius: .75rem;
+        border: 1px solid var(--white);
+        color: var(--white);
+        font-weight: bold;
+        cursor: pointer;
+      
+    }
+
+    & button:hover {
+        background-color: var(--white);
+        padding-inline: 1.25rem;
+        padding-block: .875rem;
+        border-radius: .75rem;
+        border: 1px solid var(--blue);
+        color: var(--blue);
+        font-weight: bold;
+        transition: background-color .2s;
+     
+    }
+}
+
+.hiddenButton {
+      visibility: hidden;
+        max-height: 0; /*fazendo o botão sumir*/
+}
+
+& footer:focus-within .hiddenButton { /*faz o botão aparecer */ /*se qualquer elemento do footer receber um um foco, aplique isso nessa classe*/
+    display: initial;
+    visibility: visible;
+    max-height: none;
+}
